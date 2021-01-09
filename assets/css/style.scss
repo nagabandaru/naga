@@ -4,5 +4,11 @@
 @import "{{ site.theme }}";
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
+}
+.wrapper{
+  width: 100%;
+}
+.section{
+  width: calc(100% - 270px);
 }
