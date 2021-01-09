@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
      <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -25,41 +25,19 @@
     </script>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li><div class="user-view">
-          <div class="background">
-            <img src="images/office.jpg">
-          </div>
-          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-          <a href="#name"><span class="white-text name">John Doe</span></a>
-          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-      </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-      </header>
-      <section>
-
+    
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li><h4 class="black-text">Naga Bandaru</h4></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect" href="./index.html">About</a></li>
+      <li><a class="waves-effect" href="./blogs.html">Blogs</a></li>
+      <li><a class="waves-effect" href="./projects.html">Projects</a></li>
+      <li><a class="waves-effect" target="_blank" href="https://github.com/nagabandaru">Github</a></li>
+      <li><a class="waves-effect" href="./links.html">Links</a></li>
+    </ul>
+    <main>
       {{ content }}
-
-      </section>
-      <footer>
-      </footer>
-    </div>
+    </main>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>

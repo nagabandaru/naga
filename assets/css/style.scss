@@ -1,20 +1,27 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
 body {
   font-family: 'Poppins', sans-serif !important;
 }
-.wrapper{
-  width: 100%;
-}
-section{
-  width: calc(100% - 270px);
-}
 header, main, footer {
-  padding-left: 300px;
+  padding-left: 400px;
+  font-size: 20px;
+  .small{
+    font-size: 12px;
+  }
+  em{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  hr{
+    width: 99%;
+  
+    color: darken(#ffffff, 1%);
+    height: 0.5px;
+  }
 }
+
 
 @media only screen and (max-width : 992px) {
   header, main, footer {
